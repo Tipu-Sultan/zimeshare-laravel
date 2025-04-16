@@ -1,66 +1,85 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Create the README.md file with the provided content
+readme_content = """
+# 🧾 Asbestos Trust & Case Search Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This project is a comprehensive web-based platform to search, view, and manage asbestos-related trust data, court filings, claims, and case settlements. The goal is to streamline the process of searching large datasets for information regarding sites, years worked, injuries, defendants, and settlement projections.
 
-## About Laravel
+## 🚀 Project Purpose
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The purpose of this application is to:
+- Allow users to enter/search data such as site, year, ship, contractor, or state.
+- Generate search results related to approved asbestos trusts.
+- Record and project settlement values based on injury types.
+- Enable linking of actual cases, court filings, and claims to asbestos trust data.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📋 Key Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. **Login System**
+   - Secure login using username and password.
+   - Hosted on a subdomain.
 
-## Learning Laravel
+2. **Dashboard**
+   - Overview of data categories.
+   - Quick access to search and data entry functionalities.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+3. **Advanced Search**
+   - Filter records by years worked, site, contractor, state, or ship.
+   - Search across multiple sheets to cross-reference trust and case data.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+4. **Trust Data Management**
+   - Add/update list of asbestos trusts and relevant details.
+   - Manage data about when and where asbestos was used (Approved Sites).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+5. **Actual Cases and Settlements**
+   - Record actual case information.
+   - Include settlement amounts linked to specific claims and trusts.
 
-## Laravel Sponsors
+6. **Claim Information**
+   - Enter and manage claims.
+   - Link to specific injuries, trusts, and court filings.
+   - Generate projected settlement values.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+7. **Court Filings**
+   - Add/update court filing data.
+   - Link to names, sites, defendants, and related trusts/cases.
 
-### Premium Partners
+## 🛠️ Milestones & Timeline
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+| Milestone | Description | Time Estimate |
+|----------|-------------|----------------|
+| **#1** | Subdomain setup, login feature, and dashboard layout | ~1 day |
+| **#2** | Add Trust data (Prototyping: 1.5 days, Development: 3 days) | ~4.5 days |
+| **#3** | Search Trust data (Prototyping: 1.5 days, Development: 3 days) | ~4.5 days |
+| **#4** | Add and search Case data (Prototyping: 1.5 days, Development: 6 days) | ~7.5 days |
+| **#5** | Add and search Court Filings (Prototyping: 1.5 days, Development: 6 days) | ~7.5 days |
+| **#6** | Claim creation and settlement projections (Prototyping: 1.5 days, Development: 8 days) | ~9.5 days |
+| **#7** | Final testing, polishing, and deployment | ~1 day |
 
-## Contributing
+## 📂 Dataset Notes
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- The dataset contains lists of asbestos trust-approved sites.
+- Future enhancements will include the ability to add more data points (e.g., claims, court filings, defendant names, etc.)
+- The system will support smart search and filtering options.
+- Designed to scale and support automation of reports and updates.
 
-## Code of Conduct
+## 📌 How to Use
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **Login:** Access via your assigned subdomain with your credentials.
+2. **Navigate:** Use the dashboard to access search tools and data management modules.
+3. **Search:** Search for records using years worked, contractor name, ship, or state.
+4. **Manage Data:** Add or update trusts, cases, claims, and court filings.
+5. **View Projections:** See projected and actual settlement values linked to data points.
 
-## Security Vulnerabilities
+## 📈 Future Scope
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Attach documents or new fields dynamically.
+- Multi-user roles and permission-based access.
+- Automated reports and email notifications.
+- Data import/export from spreadsheet datasets.
 
-## License
+## 🧑‍💻 Author
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+> Tipu Sultan  
+> Full Stack Developer  
+"""
+
