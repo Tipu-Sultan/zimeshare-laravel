@@ -1,6 +1,3 @@
-# Create the README.md file with the provided content
-readme_content = """
-# 🧾 Asbestos Trust & Case Search Platform
 
 This project is a comprehensive web-based platform to search, view, and manage asbestos-related trust data, court filings, claims, and case settlements. The goal is to streamline the process of searching large datasets for information regarding sites, years worked, injuries, defendants, and settlement projections.
 
